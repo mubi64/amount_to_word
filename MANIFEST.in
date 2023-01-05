@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include amount_to_word *.css
+recursive-include amount_to_word *.csv
+recursive-include amount_to_word *.html
+recursive-include amount_to_word *.ico
+recursive-include amount_to_word *.js
+recursive-include amount_to_word *.json
+recursive-include amount_to_word *.md
+recursive-include amount_to_word *.png
+recursive-include amount_to_word *.py
+recursive-include amount_to_word *.svg
+recursive-include amount_to_word *.txt
+recursive-exclude amount_to_word *.pyc
