@@ -124,6 +124,18 @@ fixtures = [
 doc_events = {
     "Sales Invoice":{
         "before_save": "amount_to_word.amount_to_words.sales_invoice.before_save"
+    },
+    "Sales Order":{
+        "before_save": "amount_to_word.amount_to_words.sales_order.before_save"
+    },
+    "Quotation":{
+        "before_save": "amount_to_word.amount_to_words.quotation.before_save"
+    },
+    "Purchase Invoice":{
+        "before_save": "amount_to_word.amount_to_words.purchase_invoice.before_save"
+    },
+    "Purchase Order":{
+        "before_save": "amount_to_word.amount_to_words.purchase_order.before_save"
     }
 }
 
