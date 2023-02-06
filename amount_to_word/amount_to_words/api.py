@@ -11,7 +11,12 @@ def get_df_currency(company_name):
 
 @frappe.whitelist()
 def convert_amount_to_words(amount, lang, currency):
-    print(amount, lang, currency)
+    str_amount = str(amount)
+    if (str_amount[0] == "-"):
+        str_amount = str_amount.split("-")
+        amount = float(str_amount[1])
+    else:
+        amount = amount
+    
     doc = num2words(amount, lang=lang, to='currency', currency=currency)
-    print(doc)
     return doc
