@@ -139,7 +139,13 @@ doc_events = {
     },
      "Delivery Note": {
         "before_save": "amount_to_word.amount_to_words.delivery_note.before_save"
+    },
+  
+    "Combined Sales Return": {
+        "before_save": "amount_to_word.amount_to_words.combined_sales_return.before_save"
     }
+
+
 }
 
 # Scheduled Tasks
